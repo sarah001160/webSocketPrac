@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web socket 協定</title>
+</head>
+
+<body>
+  <section>
+    <div>
+      <p>html 檔案一定要命名為 index，才能佈署到 githubpage 並看見內容</p>
+      <p>教學文章：
+        <a target="_blank" href="https://hackmd.io/@Heidi-Liu/javascript-websocket">淺談 web socket 協定</a>
+      </p>
+      <p>請先跑server：node server.js</p>
+      <p>再跑 http-server -p XXX(port號)</p>
+      <p>開啟三個分頁，每個分頁都要按connect按鈕。然後其中一個分頁打開 F12檢查。</p>
+      <p>開始在三個分頁，各自在 input 輸入文字，並送出</p>
+      <p>你可以在 F12 的 console.log 看到三個分頁分別輸入的文字，這就是比擬聊天室功能</p>
+    </div>
+
+    <!-- Connect or Disconnect WebSocket Server -->
+    <button id="connect">Connect</button>
+    <button id="disconnect">Disconnect</button>
+
+    <!-- Send Message to Server -->
+    <div>
+      Message: <input type="text" id="sendMsg"><button id="sendBtn">Send</button>
+    </div>
+
+    <!-- Import index.js after UI rendered -->
+    <script src='./index.js'></script>
+  </section>
+</body>
+
+</html>
