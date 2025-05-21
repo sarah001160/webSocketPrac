@@ -1,4 +1,4 @@
-// client 端
+// client 端 (前端)
 var ws;
 
 // 監聽 click 事件
